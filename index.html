@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item { 
+            width: 200px;
+            height: 200px;
+            margin-top: 70px;
+            margin-left: 70px;
+            animation: skew 2s infinite;
+            transform: skew(20deg);
+            animation-direction: alternate;
+            opacity: .9;
+            box-shadow: 20px 20px 30px 12px #ad360a;
+            position: relative;
+            
+            
+            
+
+        }
+
+       @keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #09134f;
+}
+
+        .item img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .item :hover {
+            transform: scale(1.2);
+        }
+
+
+    </style>
+
+<script src="libs/howler.js"></script>
+
+    <title>JazzFish</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item" onmouseover="playSound(sound0)" onmouseout="pauseSound(sound0)">
+            <a href="https://open.spotify.com/track/1jYnuDUosk8KSfQc4OielX?si=xzg39iluT3mqA5-LyYUGRw">
+                <img src="img/IMG_0698.jpg" alt="">
+            </a>
+        </div>
+        <div class="item" onmouseover="playSound(sound1)" onmouseout="pauseSound(sound1)">
+            <a href="https://open.spotify.com/track/4Tq2fWpX1nLCkMSOPkYb1Y?si=619L35xURtK_XMPcUBGmcA">
+                 <img src="img/IMG_0699.jpg" alt="">
+             </a>
+        </div>
+        <div class="item" onmouseover="playSound(sound2)" onmouseout="pauseSound(sound2)">
+            <a href="https://open.spotify.com/track/0KBjFrKkWhJMjdLX1wBgzg?si=e2dFtxISRne_dusTYrDaAA">
+                 <img src="img/IMG_0700 2.jpg" alt="">
+        </a>
+        </div>
+        <div class="item" onmouseover="playSound(sound3)" onmouseout="pauseSound(sound3)">
+           <a href="https://open.spotify.com/track/6WewEQkSRCTl4kTHtm8oID?si=2HdYPuCjQAO2eTr8oIZmkQ">
+                <img src="img/IMG_0701.jpg" alt="">
+         </a>
+        </div>
+        <div class="item" onmouseover="playSound(sound4)" onmouseout="pauseSound(sound4)">
+            <a href="https://open.spotify.com/track/6kLp24Op7cOu8iQkU46sBv?si=Aj4WBsjeRkKq6D80-V4M0g">
+                 <img src="img/IMG_0702.jpg" alt="">
+        </a>
+        </div>
+        <div class="item" onmouseover="playSound(sound5)" onmouseout="pauseSound(sound5)">
+            <a href="https://open.spotify.com/track/68d6ZfyMUYURol2y15Ta2Y?si=UfVt_-ElQpaRYKob9Yb4eA">
+                <img src="img/IMG_0703.jpg" alt="">
+         </a>
+        </div>
+        <div class="item" onmouseover="playSound(sound6)" onmouseout="pauseSound(sound6)">
+        <a href="https://open.spotify.com/track/3PJMsxg6rz9FOo6xNiASXz?si=Ru2LScBMQ4mjdxGqOa-Wjg">
+            <img src="img/IMG_0704.jpg" alt="">
+        </a>
+        </div>
+        <div class="item" onmouseover="playSound(sound7)" onmouseout="pauseSound(sound7)">
+            <a href="https://open.spotify.com/track/0aWMVrwxPNYkKmFthzmpRi?si=CwIAjuWaR8WSPajW09zrnQ">
+                <img src="img/IMG_0705.jpg" alt="">
+         </a>
+        </div>
+        <div class="item" onmouseover="playSound(sound8)" onmouseout="pauseSound(sound8)">
+           <a href="https://open.spotify.com/track/6LPqphk2rbt2i63bR2o247?si=NrFsHFgaQYuZ8kDXiMwqWw">
+                <img src="img/IMG_0706.jpg" alt="">
+        </a>
+        </div>
+        <div class="item" onmouseover="playSound(sound9)" onmouseout="pauseSound(sound9)">
+        <a href="https://open.spotify.com/track/41fiRrzEqGo4pTVqXYrfnz?si=2opWTB1xTxmhhixlqcrT0g">
+            <img src="img/IMG_0707 4.jpg" alt="">
+        </a>
+        </div>
+    </div>
+
+  
+</body>
+
+<script>
+const sound0 = new Howl({ src: 'sounds/Chonks.mp3' });
+console.log(sound0);
+const sound1 = new Howl({ src: 'sounds/Moanin.mp3' });
+console.log(sound1);
+const sound2 = new Howl({ src: 'sounds/YouKnowYouKnow.mp3' });
+console.log(sound2);
+const sound3 = new Howl({ src: 'sounds/DOTM.mp3' });
+console.log(sound3);
+const sound4 = new Howl({ src: 'sounds/ImConfessin.mp3' });
+console.log(sound4);
+const sound5 = new Howl({ src: 'sounds/Lingus.mp3' });
+console.log(sound5);
+const sound6 = new Howl({ src: 'sounds/GPH.mp3' });
+console.log(sound6);
+const sound7 = new Howl({ src: 'sounds/BlueInGreen.mp3' });
+console.log(sound7);
+const sound8 = new Howl({ src: 'sounds/ATTYA.mp3'});
+console.log(sound8)
+const sound9 = new Howl({ src: 'sounds/Sleeper.mp3'});
+console.log(sound9)
+
+const playSound = (sound) => {
+    sound.play();
+}
+
+const pauseSound = (sound) => {
+    sound.pause();
+}
+
+
+//i copy and pasted this from someone else's animation, when in code pen i subsituted in my elements to see if it would work and it did there but won't here, not sure whats up 
+    $(document).ready(function(){
+        animateDiv('.item');
+    });
+
+    function makeNewPosition(){
+        
+        // Get viewport dimensions (remove the dimension of the div)
+        var h = $(window).height() - 200;
+        var w = $(window).width() - 200;
+        
+        var nh = Math.floor(Math.random() * h);
+        var nw = Math.floor(Math.random() * w);
+        
+        return [nh,nw];    
+        
+    }
+
+    function animateDiv(myclass){
+        var newq = makeNewPosition();
+        $(myclass).animate({ top: newq[0], left: newq[1] }, 1000,   function(){
+        animateDiv(myclass);        
+        });
+        
+    };
+
+</script>
+</html>
+
